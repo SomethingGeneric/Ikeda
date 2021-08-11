@@ -1,0 +1,7 @@
+emulate sh -c 'source /etc/profile'
+
+PROMPT="%n@%m %~ [%?] %# "
+export PROMPT
+
+SHELL="/usr/bin/zsh"
+export SHELL
