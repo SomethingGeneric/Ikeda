@@ -7,7 +7,7 @@ mount -t sysfs sys /sys -o nosuid,noexec,nodev
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # NOTE: This was causing issues indeed, but it does seem to be optional
-# thought it would probably break if we implemented initramfs
+# though it would probably break if we implemented initramfs
 
 # /dev isn't required if we boot without initramfs because the kernel
 # will have done this for us but it doesn't hurt
@@ -33,7 +33,7 @@ mount -t tmpfs shm /dev/shm -o mode=1777,nosuid,nodev
 if [[ -f /etc/hostname ]]; then
   cat /etc/hostname > /proc/sys/kernel/hostname
 else
-  echo "mysterious-box" > /proc/sys/kernel/hostname
+  echo "mysterious-ikeda" > /proc/sys/kernel/hostname
 fi
 
 # mdev is a mini-udev implementation that

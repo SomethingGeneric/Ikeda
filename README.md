@@ -3,8 +3,7 @@ Ikeda is a WIP BusyBox and musl-libc based Linux System
 
 ![](ikeda.png)
 
-## Build Dependencies (for void or arch)
-- `base-devel`
+## Common Build dependencies
 - `bc`
 - `git`
 - `musl`
@@ -14,6 +13,18 @@ Ikeda is a WIP BusyBox and musl-libc based Linux System
 - `qemu`
 - `wget`
 - `openssl`
+
+## Build Dependencies (for void or arch)
+- `base-devel`
+
+## Build Dependencies (Pop!_OS)
+- `build-essential`
+- `qemu-system`
+- `bison`
+- `libssl-dev`
+- `libelf-dev`
+- `musl-tools`
+- `grub-pc` since Pop uses SystemD-boot (but Ubuntu shouldn't need this?)
 
 Note: some distros will also require you to install `foo-devel`, `foo-dev`, or `libfoo` variants of certain packages. 
 

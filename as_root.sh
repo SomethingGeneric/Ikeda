@@ -29,7 +29,7 @@ ln -s bin/bash usr/bin/zsh
 echo "Copying linux-${kernel_version} and busybox-${busybox_version}"
 cp ../linux-${kernel_version}/arch/x86_64/boot/bzImage boot/bzImage
 cp ../busybox-${busybox_version}/busybox usr/bin/busybox
-for util in $(./usr/bin/busybox --list-full); do 
+for util in $(./usr/bin/busybox --list-full); do
     ln -s /usr/bin/busybox $util
 done
 mkdir -p usr/share/udhcpc

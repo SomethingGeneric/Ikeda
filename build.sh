@@ -122,7 +122,7 @@ buildbash() {
         getbash
     fi
     if [ ! -f bash-${bash_version}/out/bin/bash ]; then
-        pushd bash-${bash_version} && CC="musl-gcc -static" ./configure --without-bash-malloc --prefix="$(pwd)/out" && make -j${cores} && make install && popd
+        pushd bash-${bash_version} && CC="musl-gcc -static" ./configure --without-bash-malloc --prefix="$(pwd)/out" && make && make install && popd
     fi
 
 }
