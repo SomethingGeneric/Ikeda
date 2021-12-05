@@ -32,9 +32,13 @@ mount -t tmpfs shm /dev/shm -o mode=1777,nosuid,nodev
 # don't forget to create this file if you want to give your system a name
 if [[ -f /etc/hostname ]]; then
   cat /etc/hostname > /proc/sys/kernel/hostname
+  echo "sourced hostname from /etc/hostname"
 else
   echo "mysterious-ikeda" > /proc/sys/kernel/hostname
+  echo "fallback on default hostname"
 fi
+echo "hostname should be set"
+read
 
 # mdev is a mini-udev implementation that
 # populates /dev with devices by scanning /sys

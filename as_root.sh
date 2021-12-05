@@ -31,7 +31,12 @@ cp ../linux-${kernel_version}/arch/x86_64/boot/bzImage boot/bzImage
 cp ../busybox-${busybox_version}/busybox usr/bin/busybox
 for util in $(./usr/bin/busybox --list-full); do
     ln -s /usr/bin/busybox $util
+    echo "linked busybox to $util"
 done
+
+echo "press enter"
+read
+
 mkdir -p usr/share/udhcpc
 cp -rv ../busybox-${busybox_version}/examples/udhcp/* usr/share/udhcpc/.
 
