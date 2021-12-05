@@ -92,7 +92,7 @@ buildbusybox() {
         if [ -d kernel-headers ]; then
             pushd kernel-headers && git pull && popd
         else
-            git clone https://github.com/SomethingGeneric/kernel-headers
+            git clone https://github.com/sabotage-linux/kernel-headers
         fi
 
         cp bb-config busybox-${busybox_version}/.config
