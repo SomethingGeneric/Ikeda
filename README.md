@@ -1,3 +1,6 @@
+# MOVED TO https://git.tar.black/ikeda/Ikeda
+
+
 # ![](ikeda-icon.png) Ikeda
 Ikeda is a WIP BusyBox and musl-libc based Linux System
 
