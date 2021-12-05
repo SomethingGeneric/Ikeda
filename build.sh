@@ -37,7 +37,7 @@ getlinux() {
 		rm -rf linux-${kernel_version}
 	fi
 
-	tar -xf linux-${kernel_version}.tar.xz
+	tar -xvf linux-${kernel_version}.tar.xz
 
 }
 
