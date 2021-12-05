@@ -98,9 +98,6 @@ buildbusybox() {
         cp bb-config busybox-${busybox_version}/.config
         pushd busybox-${busybox_version} && make CC=musl-gcc && cp .config ../bb-config && popd
 
-        echo "done w/ busybox"
-        echo "press enter"
-        read
     else
         echo "Not building BusyBox (program exists)"
         echo "Delete busybox-${busybox_version}/busybox to force a rebuild."
@@ -212,9 +209,6 @@ image() {
         echo "w"
     ) | fdisk ikeda
 
-    pwd
-    echo "press enter"
-    read
 	sudo ./as_root.sh
 
 }
