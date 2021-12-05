@@ -13,6 +13,7 @@ Ikeda is a WIP BusyBox and musl-libc based Linux System
 - `qemu`
 - `wget`
 - `openssl`
+- `gparted` or `parted` ?
 
 ## Build Dependencies (for void or arch)
 - `base-devel`

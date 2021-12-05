@@ -186,7 +186,7 @@ image() {
     buildbusybox
     buildbash
     musl
-    sg
+    #sg
 
     printsection "Making final image"
 
@@ -200,14 +200,8 @@ image() {
 
     echo "Making Ikeda Linux image"
 	fallocate -l1500M ikeda
-	(
-        echo "n"
-        echo
-        echo
-        echo
-        echo
-        echo "w"
-    ) | fdisk ikeda
+	parted ikeda mklabel dos --script
+    parted ikeda mkpart ext4 0 100% --script
 
 	sudo ./as_root.sh
 
