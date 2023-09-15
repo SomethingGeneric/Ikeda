@@ -70,3 +70,6 @@ Derhaeg's original BusyBox config was taken from Arch Linux, if any issues arise
 
 # This project has moved:
 [GitLab Repository](https://gitlab.mattcompton.dev/matt/Ikeda)
+
+# This project has moved:
+[GitLab Repository](https://gitlab.mattcompton.dev/matt/Ikeda)
