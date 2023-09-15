@@ -66,3 +66,7 @@ https://en.wikipedia.org/wiki/Ikeda_map
 #### BusyBox
 
 Derhaeg's original BusyBox config was taken from Arch Linux, if any issues arise we can attempt to use Arch Linux's latest BusyBox config in its place.
+
+
+# This project has moved:
+[GitLab Repository](https://gitlab.mattcompton.dev/matt/Ikeda)
